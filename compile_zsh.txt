@@ -26,7 +26,8 @@ need to install a package called 'curses-devel' or 'ncurses-devel' on your
 system."
 See `config.log' for more details
 
-
+# 解决 安装库
+apt-get install libncursesada11-dev
 
 
 
@@ -65,6 +66,5 @@ References
 
 
 
-# 解决 安装库
-apt-get install libncursesada11-dev
+
 
