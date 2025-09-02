@@ -1,0 +1,49 @@
+# yum install wget | apt install wget
+wget https://sourceforge.net/projects/zsh/files/zsh/5.9/zsh-5.9.tar.xz
+# 官网地址 https://zsh.sourceforge.io/Arc/source.html
+
+# yum install unzip | apt install unzip
+tar -xvf zsh-5.9.tar.xz
+
+rm zsh-5.9.tar.xz
+
+cd zsh-5.9
+
+mkdir build && cd build
+../configure  --prefix=./output
+make -j80
+# 80是你的CPU核心数 可以加快编译
+make install
+
+
+
+
+
+
+
+
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+Time to change your default shell to zsh: 否是设置为默认shell
+Do you want to change your default shell to zsh? [Y/n] 
+
+
+
+
+
+configure: error: "No terminal handling library was found on your system.
+This is probably a library called 'curses' or 'ncurses'.  You may
+need to install a package called 'curses-devel' or 'ncurses-devel' on your
+system."
+See `config.log' for more details
+
+
+
+
+
+
+
+# 解决 安装库
+apt-get install libncursesada11-dev
+
