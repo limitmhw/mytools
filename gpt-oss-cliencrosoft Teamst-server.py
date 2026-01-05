@@ -44,5 +44,22 @@ else:
 #   --port 9090
 
 
+# docker run --gpus '"device=4,5,6,7"' \
+#     --network host \
+#     --privileged \
+#     --ipc=host \
+#     --pid=host \
+#     --name "hongweimeng_oss" \
+#     -v /scratch2/:/scratch2/ \
+#     -v /scratch/:/scratch/ \
+#     -e CUDA_VISIBLE_DEVICES=0,1,2,3 \
+#     vllm/vllm-openai:v0.10.2 \
+#     --model /scratch/meng/gpt-oss-120b \
+#     --port 9090 \
+#     --tensor-parallel-size 4 \
+#     --gpu-memory-utilization 0.90
+
+
+
 
 
