@@ -3,5 +3,8 @@ apt install openssh-server -y
 
 
 vim /etc/ssh/sshd_config
+PermitRootLogin yes
+
+
 systemctl restart ssh
 /etc/init.d/ssh restart
