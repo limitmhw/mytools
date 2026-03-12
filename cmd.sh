@@ -17,3 +17,5 @@ alias gc="git checkout"
 alias gd="git diff"
 alias glp="git log --pretty=\"%h %cd %an ==>%s\" --date=short"
 alias ll="ls -l --color"
+
+# claude --dangerously-skip-permissions
