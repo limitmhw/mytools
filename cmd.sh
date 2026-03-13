@@ -19,3 +19,4 @@ alias glp="git log --pretty=\"%h %cd %an ==>%s\" --date=short"
 alias ll="ls -l --color"
 
 # claude --dangerously-skip-permissions
+# claude /install-github-app
