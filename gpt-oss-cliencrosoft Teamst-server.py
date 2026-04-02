@@ -60,6 +60,7 @@ else:
 #     --gpu-memory-utilization 0.90
 
 
-
+# export SGLANG_USE_FUSED_MOE=0
+# CUDA_VISIBLE_DEVICES=0,4,6,7 python -m sglang.launch_server   --model-path /scratch/meng/gpt-oss-120b   --host 0.0.0.0   --port 9090   --tensor-parallel-size 4 --dtype bfloat16 --mem-fraction-static 0.4
 
 
