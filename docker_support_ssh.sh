@@ -16,6 +16,10 @@ systemctl restart ssh
 
 
 
+ssh root@xxxxxx  -p 2222
+
+
+
 
 
 
